@@ -1,0 +1,50 @@
+.features {
+  background-color: #F8F9FF;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 80px;
+
+    & .headline {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__functions {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__function {
+    width: 300px;
+    margin-bottom: 90px;
+
+    &-headline {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    &-title {
+      color: #8794BA;
+    }
+  }
+
+  &__graph {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-text {
+      width: 440px;
+    }
+
+    &-middle {
+      margin: 60px 0;
+    }
+  }
+}
+
+.graph-middle-text {
+  order: 2;
+}
