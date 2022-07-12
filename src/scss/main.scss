@@ -1,0 +1,52 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+a {
+  color: #8794BA;
+  text-decoration: none;
+
+  &:hover {
+    color: #ffff;
+  }
+}
+
+button {
+  padding: 8px 50px;
+  border-radius: 50px;
+  font-size: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary-button {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+
+  &:hover {
+    background-color: #EF2A82;
+    color: #fff;
+    border-color: #EF2A82;
+  }
+}
+
+.secondary-button {
+  background-color: #EF2A82;
+  color: #fff;
+  border: 1px solid #EF2A82;
+
+  &:hover {
+    background-color: transparent;
+    border-color: #fff;
+  }
+}

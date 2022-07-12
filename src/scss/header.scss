@@ -1,0 +1,66 @@
+.header {
+  background-image: url("/src/images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0 320px;
+  color: #fff;
+  background-position: bottom;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("/src/images/graph1.png");
+    background-repeat: no-repeat;
+    width: 810px;
+    height: 624px;
+    right: 0;
+    top: 95px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("/src/images/chart2.png");
+    background-repeat: no-repeat;
+    width: 398px;
+    height: 340px;
+    right: 480px;
+    top: 215px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+      user-select: none;
+      height: 44px;
+
+      & img {
+        width: 200px;
+      }
+    }
+
+    &-links {
+      width: 630px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    width: 418px;
+    margin-top: 140px;
+
+    &-text {
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    &-button {
+      margin-top: 50px;
+    }
+  }
+}
