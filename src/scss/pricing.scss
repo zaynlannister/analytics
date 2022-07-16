@@ -1,0 +1,92 @@
+.footer {
+  background-image: url("/src/images/pricing-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 0;
+
+  &__header {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+
+    &-headline {
+      color: #fff;
+    }
+  }
+
+  &__modes {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    border-bottom: 1px solid #8794BA;
+  }
+
+  &__basement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+
+    &-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 320px;
+    }
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      width: 150px;
+
+      & svg {
+        fill: #8794BA;
+        transition: 100ms ease;
+
+        &:hover {
+          fill: #ffff;
+        }
+      }
+    }
+  }
+}
+
+.pricing__card {
+  background-color: #0F1F4B;
+  color: #fff;
+  padding: 60px;
+  border-radius: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: 200ms ease;
+
+  &-header {
+    border-bottom: 1px solid #2A407C;
+    padding-bottom: 10px;
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: 34px;
+  }
+
+  &-subtitle {
+    color: #8794BA;
+  }
+
+  &-cost {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0 24px;
+
+    & span {
+      font-size: 48px;
+      font-weight: bold;
+    }
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #172755;
+  }
+}
