@@ -42,6 +42,11 @@
       }
     }
 
+    &-action {
+      display: flex;
+      align-items: center;
+    }
+
     &-links {
       width: 630px;
       display: flex;
