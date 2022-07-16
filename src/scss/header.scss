@@ -11,6 +11,7 @@
     content: "";
     background-image: url("/src/images/graph1.png");
     background-repeat: no-repeat;
+    background-size: cover;
     width: 810px;
     height: 624px;
     right: 0;
@@ -22,16 +23,33 @@
     content: "";
     background-image: url("/src/images/chart2.png");
     background-repeat: no-repeat;
+    background-size: contain;
     width: 398px;
     height: 340px;
     right: 480px;
     top: 215px;
   }
 
-  &__nav {
+  &__graph {
+    display: none;
+  }
+
+  &__nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__nav {
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 20px 0;
+    background-color: #172755;
+    box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.38);
+    border: 1px solid #12214D;
 
     &-logo {
       user-select: none;
@@ -47,11 +65,21 @@
       align-items: center;
     }
 
-    &-links {
+    &-content {
       width: 630px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    &-links {
+      width: 370px;
+      display: flex;
+      justify-content: space-between;
+
+      &.active {
+        visibility: visible;
+      }
     }
   }
 
