@@ -16,8 +16,6 @@
   }
 
   &__modes {
-    display: flex;
-    justify-content: space-between;
     padding: 80px 0;
     border-bottom: 1px solid #8794BA;
   }
@@ -89,4 +87,9 @@
     background-color: #fff;
     color: #172755;
   }
+}
+
+.swiper-container {
+  display: flex;
+  justify-content: space-between;
 }

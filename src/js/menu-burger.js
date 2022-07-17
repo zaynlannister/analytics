@@ -24,6 +24,5 @@ menuToggle.addEventListener('click', function() {
 })
 
 menu.addEventListener('click', event => {
-    console.log('sdd')
     closeMenu()
 })
